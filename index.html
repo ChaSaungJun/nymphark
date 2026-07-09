@@ -4,25 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NymphArk — 니케 정보 노트</title>
-  <meta name="description" content="모바일 게임 '승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳. 고유 용어 해석, 니케 도감, 니케 세계관 연도 세 가지 분류로 올립니다.">
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <meta name="description" content="모바일 게임 '승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳. 니케 고유 용어, 니케 도감, 니케 세계관 연도 세 가지 분류로 올립니다.">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 
-  <!-- ===== 상단 헤더 ===== -->
-  <header class="site-header">
+  <!-- ===== ① 상단 글로벌 내비게이션 (빨강) ===== -->
+  <header class="site-header site-header--red">
     <div class="inside-header grid-container">
       <p class="main-title"><a href="index.html">NymphArk</a></p>
       <nav class="main-navigation" aria-label="기본 메뉴">
         <ul>
           <li><a href="index.html">홈</a></li>
-          <li><a href="terms.html">고유 용어 해석</a></li>
-          <li><a href="dex.html">니케 도감</a></li>
-          <li><a href="timeline.html">세계관 연도</a></li>
+          <li><a href="notices.html">공지사항</a></li>
+          <li><a href="media.html">미디어</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- ===== ② 히어로 배너 =====
+       배경 이미지가 준비되면 assets/img/hero-banner.jpg 로 저장하기만 하면
+       그라데이션 위로 자동 표시됩니다 (style.css의 .hero-banner 참고) -->
+  <section class="hero-banner">
+    <div class="hero-inner grid-container">
+      <p class="hero-label">홈</p>
+      <h1 class="hero-title">NymphArk</h1>
+      <p class="hero-desc">'승리의 여신: 니케' 정보를 나만의 방식으로 정리합니다</p>
+    </div>
+  </section>
+
+  <!-- ===== ③ 서브 내비게이션 (분류 목록으로 이동) ===== -->
+  <nav class="sub-nav" aria-label="분류 메뉴">
+    <ul class="grid-container">
+      <li><a href="terms.html">니케 고유 용어</a></li>
+      <li><a href="dex.html">니케 도감</a></li>
+      <li><a href="timeline.html">세계관 연도</a></li>
+      <li><a href="essays.html">지극히 자의적인 고찰</a></li>
+    </ul>
+  </nav>
 
   <!-- ===== 본문 + 사이드바 ===== -->
   <div class="site-content grid-container">
@@ -32,60 +52,53 @@
         <article class="inside-article">
           <div class="entry-content">
 
-            <h4 class="tagline">'승리의 여신: 니케' 정보를 나만의 방식으로 정리합니다</h4>
+            <!-- ④ 방문 환영 문구 -->
+            <h2 class="welcome-note">어서 오세요, NymphArk입니다.</h2>
+            <p class="welcome-sub">'승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳입니다.</p>
 
-            <h2 class="section-title" id="categories">분류</h2>
-            <p class="section-desc">세 가지 분류로 정보를 올립니다</p>
+            <!-- ④ 대문 이미지
+                 이미지가 준비되면 assets/img/main-visual.jpg 로 저장한 뒤
+                 아래 src를 "assets/img/main-visual.jpg" 로 바꾸면 됩니다 -->
+            <figure class="main-visual">
+              <img src="assets/img/main-visual.svg" alt="NymphArk 대문 이미지">
+            </figure>
 
-            <!-- 분류 카드 -->
-            <section class="post-grid">
+            <!-- ⑤ 환영 배너 (16:9)
+                 이미지가 준비되면 assets/img/welcome-banner.jpg 로 저장한 뒤
+                 아래 src를 "assets/img/welcome-banner.jpg" 로 바꾸면 됩니다 -->
+            <figure class="welcome-banner">
+              <img src="assets/img/welcome-banner.svg" alt="NymphArk 환영 배너">
+            </figure>
 
-              <article class="post-card">
-                <div class="post-card-image">
-                  <a href="terms.html"><img src="assets/img/cat-terms.svg" alt="고유 용어 해석 분류 이미지"></a>
-                </div>
-                <h2 class="post-card-title"><a href="terms.html">고유 용어 해석</a></h2>
-                <p class="post-card-excerpt">니케 세계에 등장하는 고유 용어들을 하나씩 골라 뜻과 맥락을 풀이합니다.</p>
-                <p class="post-card-more"><a href="terms.html">목록 보기 →</a></p>
-              </article>
-
-              <article class="post-card">
-                <div class="post-card-image">
-                  <a href="dex.html"><img src="assets/img/cat-dex.svg" alt="니케 도감 분류 이미지"></a>
-                </div>
-                <h2 class="post-card-title"><a href="dex.html">니케 도감</a></h2>
-                <p class="post-card-excerpt">니케(캐릭터)들의 정보를 도감 형식으로 한 명씩 정리합니다.</p>
-                <p class="post-card-more"><a href="dex.html">목록 보기 →</a></p>
-              </article>
-
-              <article class="post-card">
-                <div class="post-card-image">
-                  <a href="timeline.html"><img src="assets/img/cat-timeline.svg" alt="니케 세계관 연도 분류 이미지"></a>
-                </div>
-                <h2 class="post-card-title"><a href="timeline.html">니케 세계관 연도</a></h2>
-                <p class="post-card-excerpt">세계관에서 벌어진 사건들을 연도 순서로 정리합니다.</p>
-                <p class="post-card-more"><a href="timeline.html">목록 보기 →</a></p>
-              </article>
-
+            <!-- ⑦ 최신 글 (최대 3개) -->
+            <section class="recent-section">
+              <h2 class="section-title">최신 글</h2>
+              <!-- 새 글을 올릴 때 최대 3개까지, 최신이 위로 오도록 <li>를 추가하세요 -->
+              <ul class="recent-list">
+                <li>
+                  <a href="posts/notice-welcome.html">
+                    <span class="recent-list-title">[공지] NymphArk에 오신 것을 환영합니다</span>
+                    <span class="recent-list-date">2026.07.10</span>
+                  </a>
+                </li>
+              </ul>
             </section>
-
-            <!-- CTA 섹션 -->
-            <div class="cta-section">
-              <h2>다른 사이트도 운영 중입니다</h2>
-              <p>차승준의 깃허브 블로그 대문에서 운영 중인 사이트를 모두 볼 수 있습니다.</p>
-              <a href="https://chasaungjun.github.io/" class="cta-button">메인 블로그 가기</a>
-            </div>
 
           </div>
         </article>
       </main>
     </div>
 
-    <!-- 오른쪽 사이드바 -->
+    <!-- ===== ⑥ 오른쪽 사이드바: '지극히 자의적인 고찰' 최신 글 (최대 5개) ===== -->
     <aside class="sidebar" aria-label="사이드바">
       <div class="widget">
-        <h2 class="widget-title">최신 글</h2>
-        <!-- 새 글을 올릴 때 아래 목록 맨 위에 한 줄 추가하세요 -->
+        <h2 class="widget-title"><a href="essays.html">지극히 자의적인 고찰</a></h2>
+        <!-- 새 글을 올릴 때 아래 안내 줄을 지우고 이 예시처럼 최대 5개까지 항목을 추가하세요:
+        <li>
+          <a href="posts/글파일이름.html">글 제목</a>
+          <span class="recent-post-date">2026.07.10</span>
+        </li>
+        -->
         <ul class="recent-posts">
           <li><span class="recent-post-date">아직 등록된 글이 없습니다.</span></li>
         </ul>
@@ -100,9 +113,12 @@
       <nav aria-label="푸터 메뉴">
         <ul class="gi-footer__list">
           <li><a href="index.html">홈</a></li>
-          <li><a href="terms.html">고유 용어 해석</a></li>
+          <li><a href="notices.html">공지사항</a></li>
+          <li><a href="media.html">미디어</a></li>
+          <li><a href="terms.html">니케 고유 용어</a></li>
           <li><a href="dex.html">니케 도감</a></li>
           <li><a href="timeline.html">세계관 연도</a></li>
+          <li><a href="essays.html">지극히 자의적인 고찰</a></li>
           <li><a href="https://chasaungjun.github.io/">메인 블로그</a></li>
         </ul>
       </nav>

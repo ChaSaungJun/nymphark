@@ -13,6 +13,6 @@
     <line x1="600" y1="340" x2="800" y2="340"/>
     <line x1="600" y1="390" x2="720" y2="390"/>
   </g>
-  <text x="700" y="580" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI','Malgun Gothic',sans-serif" font-size="64" font-weight="700">고유 용어 해석</text>
+  <text x="700" y="580" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI','Malgun Gothic',sans-serif" font-size="64" font-weight="700">니케 고유 용어</text>
   <text x="700" y="640" text-anchor="middle" fill="#ffffff" opacity="0.7" font-family="'Segoe UI','Malgun Gothic',sans-serif" font-size="28">NymphArk · 니케 용어 사전</text>
 </svg>
