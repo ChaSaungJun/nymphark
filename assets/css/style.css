@@ -353,11 +353,11 @@ img { max-width: 100%; height: auto; }
 .site-header--red .main-navigation a:hover { color: rgba(255, 255, 255, 0.75); }
 
 /* ===== ② 히어로 배너 =====
-   배경 이미지: assets/img/hero-banner.png (사용자 제공, 2026-07-10)
+   배경 이미지: assets/img/hero-banner.jpg (사용자 제공, 2026-07-10)
    이미지를 교체하려면 같은 이름으로 덮어쓰면 됩니다 (파일이 없으면 그라데이션만 보임) */
 .hero-banner {
   background-image:
-    url('../img/hero-banner.png'),
+    url('../img/hero-banner.jpg'),
     linear-gradient(135deg, #123a63 0%, #1e73be 60%, #58a6dd 100%);
   background-size: cover;
   background-position: center;
