@@ -40,7 +40,8 @@ img { max-width: 100%; height: auto; }
 .inside-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  gap: 40px;                   /* 블로그 이름과 탭 사이 간격 (탭끼리 간격과 동일) */
   flex-wrap: wrap;
   padding: 20px 40px;
 }
@@ -49,14 +50,21 @@ img { max-width: 100%; height: auto; }
 .main-title a { color: var(--contrast); text-decoration: none; }
 .main-title a:hover { color: var(--contrast); }
 
-.main-navigation ul { list-style: none; margin: 0; padding: 0; display: flex; }
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* 탭끼리 간격 (블로그 이름과의 간격과 동일) */
+}
 .main-navigation a {
   display: block;
-  padding: 10px 0 10px 25px;
+  padding: 10px 0;
   color: var(--contrast);
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 25px; /* 블로그 이름과 동일한 크기 */
 }
 .main-navigation a:hover { color: var(--accent); }
 
@@ -311,6 +319,11 @@ img { max-width: 100%; height: auto; }
 
 /* ===== 반응형: 모바일 ===== */
 @media (max-width: 600px) {
+  /* 헤더: 이름과 탭을 같은 크기로 함께 줄임 (넘침 방지) */
+  .inside-header { gap: 18px; }
+  .main-navigation ul { gap: 18px; }
+  .main-title,
+  .main-navigation a { font-size: 19px; }
   .post-grid { grid-template-columns: 1fr; }
   .cta-section { padding: 60px 15px; }
   .gi-footer { padding-top: 22px; }
@@ -340,11 +353,11 @@ img { max-width: 100%; height: auto; }
 .site-header--red .main-navigation a:hover { color: rgba(255, 255, 255, 0.75); }
 
 /* ===== ② 히어로 배너 =====
-   이미지가 준비되면 assets/img/hero-banner.jpg 로 저장하기만 하면
-   그라데이션 위로 자동 표시됩니다 (파일이 없으면 그라데이션만 보임) */
+   배경 이미지: assets/img/hero-banner.png (사용자 제공, 2026-07-10)
+   이미지를 교체하려면 같은 이름으로 덮어쓰면 됩니다 (파일이 없으면 그라데이션만 보임) */
 .hero-banner {
   background-image:
-    url('../img/hero-banner.jpg'),
+    url('../img/hero-banner.png'),
     linear-gradient(135deg, #123a63 0%, #1e73be 60%, #58a6dd 100%);
   background-size: cover;
   background-position: center;

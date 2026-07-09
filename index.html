@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NymphArk — 니케 정보 노트</title>
   <meta name="description" content="모바일 게임 '승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳. 니케 고유 용어, 니케 도감, 니케 세계관 연도 세 가지 분류로 올립니다.">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -24,8 +24,8 @@
   </header>
 
   <!-- ===== ② 히어로 배너 =====
-       배경 이미지가 준비되면 assets/img/hero-banner.jpg 로 저장하기만 하면
-       그라데이션 위로 자동 표시됩니다 (style.css의 .hero-banner 참고) -->
+       배경 이미지: assets/img/hero-banner.png (교체하려면 같은 이름으로 덮어쓰기,
+       style.css의 .hero-banner 참고) -->
   <section class="hero-banner">
     <div class="hero-inner grid-container">
       <p class="hero-label">홈</p>
@@ -89,18 +89,16 @@
       </main>
     </div>
 
-    <!-- ===== ⑥ 오른쪽 사이드바: '지극히 자의적인 고찰' 최신 글 (최대 5개) ===== -->
+    <!-- ===== ⑥ 오른쪽 사이드바: 최신 글 (최대 5개) ===== -->
     <aside class="sidebar" aria-label="사이드바">
       <div class="widget">
-        <h2 class="widget-title"><a href="essays.html">지극히 자의적인 고찰</a></h2>
-        <!-- 새 글을 올릴 때 아래 안내 줄을 지우고 이 예시처럼 최대 5개까지 항목을 추가하세요:
-        <li>
-          <a href="posts/글파일이름.html">글 제목</a>
-          <span class="recent-post-date">2026.07.10</span>
-        </li>
-        -->
+        <h2 class="widget-title">최신 글</h2>
+        <!-- 새 글을 올릴 때 최대 5개까지, 최신이 위로 오도록 <li>를 추가하세요 -->
         <ul class="recent-posts">
-          <li><span class="recent-post-date">아직 등록된 글이 없습니다.</span></li>
+          <li>
+            <a href="posts/notice-welcome.html">[공지] NymphArk에 오신 것을 환영합니다</a>
+            <span class="recent-post-date">2026.07.10</span>
+          </li>
         </ul>
       </div>
     </aside>
