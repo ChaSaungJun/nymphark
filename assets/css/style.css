@@ -393,8 +393,9 @@ img { max-width: 100%; height: auto; }
   list-style: none;
   margin: 0 auto;
   padding: 4px 26px;
-  width: fit-content;
-  max-width: 100%;
+  /* 아래 본문 콘텐츠(본문 카드+사이드바) 폭과 맞춤: 1200px 컨테이너 - 좌우 여백 20px씩 */
+  width: 100%;
+  max-width: 1160px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -497,6 +498,7 @@ body > .sub-nav { padding-top: 18px; }
   .hero-inner { padding: 55px 30px 60px; }
   .hero-title { font-size: 40px; }
   .welcome-note { font-size: 21px; }
+  .sub-nav { padding-left: 15px; padding-right: 15px; } /* 본문 여백(15px)과 정렬 */
   .sub-nav li + li::before { margin: 0 12px; }
 }
 
