@@ -5,44 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NymphArk — 니케 정보 노트</title>
   <meta name="description" content="모바일 게임 '승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳. 니케 고유 용어, 니케 도감, 니케 세계관 연도 세 가지 분류로 올립니다.">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 
-  <!-- ===== ① 상단 글로벌 내비게이션 (빨강) ===== -->
-  <header class="site-header site-header--red">
-    <div class="inside-header grid-container">
-      <p class="main-title"><a href="index.html">NymphArk</a></p>
-      <nav class="main-navigation" aria-label="기본 메뉴">
-        <ul>
-          <li><a href="index.html">홈</a></li>
-          <li><a href="notices.html">공지사항</a></li>
-          <li><a href="media.html">미디어</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- ===== 상단 영역: 헤더 + 히어로 + 서브 내비가 하나의 배경 이미지를 공유 =====
+       배경 이미지: assets/img/hero-banner.jpg (교체하려면 같은 이름으로 덮어쓰기)
+       인물 이미지: assets/img/hero-character.webp (배경이 제거된 투명 이미지 —
+                    오른쪽에 표시되며, 상단 탭 영역까지 겹쳐 보입니다) -->
+  <div class="top-area">
 
-  <!-- ===== ② 히어로 배너 =====
-       배경 이미지: assets/img/hero-banner.jpg (교체하려면 같은 이름으로 덮어쓰기,
-       style.css의 .hero-banner 참고) -->
-  <section class="hero-banner">
-    <div class="hero-inner grid-container">
-      <p class="hero-label">홈</p>
-      <h1 class="hero-title">NymphArk</h1>
-      <p class="hero-desc">'승리의 여신: 니케' 정보를 나만의 방식으로 정리합니다</p>
-    </div>
-  </section>
+    <!-- ① 상단 글로벌 내비게이션 -->
+    <header class="site-header">
+      <div class="inside-header grid-container">
+        <p class="main-title"><a href="index.html">NymphArk</a></p>
+        <nav class="main-navigation" aria-label="기본 메뉴">
+          <ul>
+            <li><a href="index.html" class="current">홈</a></li>
+            <li><a href="notices.html">공지사항</a></li>
+            <li><a href="media.html">미디어</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- ===== ③ 서브 내비게이션 (분류 목록으로 이동) ===== -->
-  <nav class="sub-nav" aria-label="분류 메뉴">
-    <ul class="grid-container">
-      <li><a href="terms.html">니케 고유 용어</a></li>
-      <li><a href="dex.html">니케 도감</a></li>
-      <li><a href="timeline.html">세계관 연도</a></li>
-      <li><a href="essays.html">지극히 자의적인 고찰</a></li>
-    </ul>
-  </nav>
+    <!-- ② 히어로 배너 -->
+    <section class="hero-banner">
+      <div class="hero-inner grid-container">
+        <h1 class="hero-title">NymphArk</h1>
+        <p class="hero-desc">'승리의 여신: 니케' 정보를 나만의 방식으로 정리합니다</p>
+      </div>
+    </section>
+
+    <!-- 인물 레이어 (이미지가 없으면 자동으로 숨겨집니다)
+         교체 방법: 새 인물 이미지를 주시면 배경 제거 + 용량 압축 후 이 파일로 저장합니다 -->
+    <img class="hero-character" src="assets/img/hero-character.webp" alt=""
+         onerror="this.style.display='none'">
+
+    <!-- ③ 서브 내비게이션 (분류 목록으로 이동) -->
+    <nav class="sub-nav" aria-label="분류 메뉴">
+      <ul>
+        <li><a href="terms.html">니케 고유 용어</a></li>
+        <li><a href="dex.html">니케 도감</a></li>
+        <li><a href="timeline.html">세계관 연도</a></li>
+        <li><a href="essays.html">지극히 자의적인 고찰</a></li>
+      </ul>
+    </nav>
+
+  </div>
 
   <!-- ===== 본문 + 사이드바 ===== -->
   <div class="site-content grid-container">
@@ -53,7 +66,8 @@
           <div class="entry-content">
 
             <!-- ④ 방문 환영 문구 -->
-            <h2 class="welcome-note">어서 오세요, NymphArk입니다.</h2>
+            <p class="ornament" aria-hidden="true">✧ ✦ ✧</p>
+            <h2 class="welcome-note">어서 오세요, <span class="brand-name">NymphArk</span>입니다.</h2>
             <p class="welcome-sub">'승리의 여신: 니케'의 정보를 나만의 방식으로 정리하는 곳입니다.</p>
 
             <!-- ④ 대문 이미지

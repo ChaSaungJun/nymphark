@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
+  <!-- 페이지 배경에 은은하게 반복되는 마법진·꽃잎 무늬 (투명도 매우 낮음) -->
+  <g fill="none" stroke="#c07cff" stroke-opacity="0.05">
+    <circle cx="720" cy="180" r="150" stroke-width="1.5"/>
+    <circle cx="720" cy="180" r="110" stroke-width="1"/>
+    <circle cx="720" cy="180" r="65" stroke-width="1" stroke-dasharray="6 8"/>
+    <polygon points="720,70 815,235 625,235" stroke-width="1"/>
+    <circle cx="140" cy="700" r="120" stroke-width="1.5"/>
+    <circle cx="140" cy="700" r="85" stroke-width="1" stroke-dasharray="5 7"/>
+    <polygon points="140,610 218,745 62,745" stroke-width="1"/>
+  </g>
+  <g fill="#ff7fc4" fill-opacity="0.05">
+    <path d="M120 140 q14 -22 28 0 q-14 22 -28 0z"/>
+    <path d="M310 420 q12 -19 24 0 q-12 19 -24 0z" transform="rotate(40 322 420)"/>
+    <path d="M560 640 q13 -21 26 0 q-13 21 -26 0z" transform="rotate(-25 573 640)"/>
+    <path d="M820 520 q11 -18 22 0 q-11 18 -22 0z" transform="rotate(65 831 520)"/>
+    <path d="M420 90 q11 -18 22 0 q-11 18 -22 0z" transform="rotate(-50 431 90)"/>
+    <path d="M240 850 q12 -19 24 0 q-12 19 -24 0z" transform="rotate(20 252 850)"/>
+  </g>
+  <g fill="#c07cff" fill-opacity="0.06">
+    <path d="M500 300 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/>
+    <path d="M90 380 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M780 780 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+  </g>
+</svg>
