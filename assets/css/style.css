@@ -352,7 +352,7 @@ img { max-width: 100%; height: auto; }
     linear-gradient(180deg, rgba(11, 10, 24, 0.35) 0%, rgba(11, 10, 24, 0.45) 55%, var(--base-2) 100%),
     url('../img/thebannerscene.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top; /* 이미지 위쪽이 잘리지 않도록 상단 기준으로 맞춤 */
   overflow: hidden;
 }
 
